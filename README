@@ -1,1 +1,56 @@
-Hola
+
+THE NICSim-vhd SIMULATION MODEL RELEASE 0.1
+============================================
+
+
+This is the README file from the source distribution of NICSim-vhd. 
+More recent information may be available on the Web at an anonymous 
+Git repository where you can access our latest source code
+
+	http://github.com/ggaray/nicsim-vhd/
+
+	NICSim-vhd is a VHDL-based network interface model. See the file COPYING 
+for the copyright notice and copying conditions. Our Elservier Journal of Systems 
+Architecture paper, available from the journal's web site, will give you a 
+feeling for what NICSim-vhd can do.
+
+Please, see 
+	
+***** To Build 
+
+REQUIRED: To quickly verify that everything works, first install GHDL.
+To get the binary distribution or more information, go to http://ghdl.free.fr
+
+To create the NICSim-vhd executable, at the command line type:
+
+ghdl -a *.vhd
+ghdl -e test_nicctrl
+
+***** To Run 
+
+At the command line type:
+
+ghdl -r test_nicctrl --stop-time=6730ns 2>/dev/null
+
+This will execute the VHDL simulation model using a sample configuration for 6730 ns.
+As a result, NICSim-vhd generates a set of output files (*.out). 
+
+NOTE: Keep in mind that according to the simulation setup, the size of the output 
+files can be *huge*.
+
+***** Configuration
+
+The required configuration files for the various DRAM types reside in the
+mem_system_def directory. For dram types where both power and performance
+simulation is supported, there are two configuration files - an spd file for
+the timing parameters and a dsh file for the power parameters. 
+
+
+BUGS, QUESTIONS, ETC.
+---------------------
+
+    We welcome bug reports, questions, comments, etc. 
+	
+	
+	Write us at
+	            	nicsim-vhd@gmail.com
