@@ -1,5 +1,5 @@
 --     NICSim-vhd: A VHDL-based modelling and simulation of NIC's buffers
---    Copyright (C) 2013 Godofredo R. Garay <godofredo_garay (-at-) gmail.com>
+--    Copyright (C) 2013 Godofredo R. Garay <godofredo.garay (-at-) gmail.com>
 
 --    This program is free software: you can redistribute it and/or modify
 --    it under the terms of the GNU General Public License as published by
