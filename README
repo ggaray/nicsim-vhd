@@ -9,17 +9,19 @@ Git repository where you can access our latest source code
 
 	http://github.com/ggaray/nicsim-vhd/
 
-	NICSim-vhd is a VHDL-based network interface model. See the file COPYING 
-for the copyright notice and copying conditions. Our Elservier Journal of Systems 
-Architecture paper, available from the journal's web site, will give you a 
-feeling for what NICSim-vhd can do.
+	NICSim-vhd is a VHDL-based network interface model for modelling and 
+simulation of NIC's buffers. See the file COPYING for the copyright notice 
+and copying conditions. Our Elservier Journal of Systems Architecture paper, 
+available from the journal's web site, will give you a feeling for what 
+NICSim-vhd can do.
 
-Please, see 
+Please, see http://www.sciencedirect.com/science/article/pii/S1383762113001860
 	
 ***** To Build 
 
-REQUIRED: To quickly verify that everything works, first install GHDL.
-To get the binary distribution or more information, go to http://ghdl.free.fr
+REQUIRED: To quickly verify that everything works, first install GHDL, an open-source 
+simulator for the VHDL language. To get the binary distribution or more information, 
+go to http://ghdl.free.fr
 
 To create the NICSim-vhd executable, at the command line type:
 
@@ -40,17 +42,19 @@ files can be *huge*.
 
 ***** Configuration
 
-The required configuration files for the various DRAM types reside in the
-mem_system_def directory. For dram types where both power and performance
-simulation is supported, there are two configuration files - an spd file for
-the timing parameters and a dsh file for the power parameters. 
+A section devoted to configuration purposes is included in the files buffmngr.vhd, 
+nicctrl.vhd, dmactrl.vhd, clkgen.vhd, traffgen.vhd, statsgen.vhd, arbiter.vhd. 
+
+***** To do
+
+To use a single configuration file. 
 
 
 BUGS, QUESTIONS, ETC.
 ---------------------
 
-    We welcome bug reports, questions, comments, etc. 
+    We welcome bug reports, questions, comments, contributors, etc. 
 	
 	
 	Write us at
-	            	nicsim-vhd@gmail.com
+	            	godofredo.garay (-at-) gmail.com

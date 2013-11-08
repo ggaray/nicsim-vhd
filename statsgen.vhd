@@ -1,5 +1,5 @@
---    <one line to give the program's name and a brief idea of what it does.>
---    Copyright (C) 2013 Godofredo R. Garay <godofredo_garay ("at") yahoo.com>
+NICSim-vhd: A VHDL-based modelling and simulation of NIC's buffers
+--    Copyright (C) 2013 Godofredo R. Garay <godofredo_garay (-at-) gmail.com>
 
 --    This program is free software: you can redistribute it and/or modify
 --    it under the terms of the GNU General Public License as published by
@@ -607,6 +607,7 @@ begin
 
 
 
+
 					and	return_to_this_state = incrementing_arbitration_latency_cycles_for_payload_transfer
 
 				then	arbitration_latency_cycles_count := arbitration_latency_cycles_count + 1;
@@ -1164,6 +1165,7 @@ begin
 					and	target_latency_cycles_counter_out = 0
 
 					and	dma_cycles_counter_out = 0
+
 
 
 				then	nic_overhead_cycles_count := nic_overhead_cycles_count + 1;
